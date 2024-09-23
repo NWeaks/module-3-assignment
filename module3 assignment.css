@@ -1,0 +1,51 @@
+body {
+    padding-top: 50px; /* Space for the navbar */
+}
+
+.tall-section {
+    height: 1000px; /* Tall section */
+    background-color: #f8f9fa; /* Distinguishable background color */
+    padding: 20px 0;
+}
+
+.menu-box {
+    background-color: #6b36b9; /* White background for menu boxes */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 20px auto; /* Center the boxes */
+    padding: 20px;
+    text-align: center; /* Center text */
+}
+
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: none; /* Hide mobile toggle on larger screens */
+    }
+}
+
+@media (min-width: 992px) {
+    /* Large layout: 3 items across */
+    .row:nth-child(1) .menu-box {
+        margin-bottom: 30px; /* Spacing between the first row */
+    }
+    .row:nth-child(2) {
+        justify-content: center; /* Center the second row */
+    }
+    .row:nth-child(2) .menu-box {
+        margin: 0 15px; /* Spacing between the bottom boxes */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Medium layout: 2 items across and 1 centered below */
+    .menu-box:nth-child(3) {
+        margin: 0 auto; /* Center the third item */
+    }
+}
+
+@media (max-width: 767px) {
+    /* Small layout: 1 item across */
+    .menu-box {
+        margin-bottom: 20px; /* Spacing for mobile */
+    }
+}
